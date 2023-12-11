@@ -1,0 +1,51 @@
+/* Header */
+.favHeader{
+    z-index: 2 !important;
+    top: 0;
+}
+
+
+/* Section */
+.sc2{
+    padding-top: 10vh;
+}
+
+.sc2 .swiperContainer{
+    margin-bottom: 2vh;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding: 4vh 0 !important;
+}
+
+.sc2 .swwr1{
+    flex-wrap: wrap;
+    gap: auto;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.sc2 .sw{
+    flex-basis: clamp(200px,22vw, 500px) !important;
+    padding: 1.5vw;
+    border-radius: 15px;
+    transition: .3s ease-in-out;
+}
+
+.empty{
+    color: white;
+    margin: 40vh 0;
+}
+
+/* Responsive */
+/* Small mobile Screens */
+@media(max-width : 455px){
+    .sc2 .sw{
+        flex-basis: clamp(250px, 20vw, 500px) !important;
+        padding: 1.5vw;
+        border-radius: 15px;
+        transition: .3s ease-in-out;
+    }
+    
+}

@@ -1,0 +1,47 @@
+/* Header */
+.favHeader{
+    z-index: 2 !important;
+    top: 0;
+}
+
+
+/* Section */
+.sc3{
+    padding-top: 10vh;
+}
+
+.sc3 .swiperContainer{
+    margin-bottom: 2vh;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    position: relative;
+    padding: 4vh 0 !important;
+}
+
+.sc3 .swwr3{
+    flex-wrap: wrap;
+    gap: auto;
+    margin: 0 auto;
+    justify-content: center;
+}
+
+.sc3 .sw{
+    flex-basis: clamp(200px,22vw, 500px) !important;
+    padding: 1.5vw;
+    border-radius: 15px;
+    transition: .3s ease-in-out;
+    margin-bottom: 2vh;
+}
+
+/* Responsive */
+/* Small mobile Screens */
+@media(max-width : 455px){
+    .sc2 .sw{
+        flex-basis: clamp(250px, 20vw, 500px) !important;
+        padding: 1.5vw;
+        border-radius: 15px;
+        transition: .3s ease-in-out;
+    }
+    
+}

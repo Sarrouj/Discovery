@@ -1,0 +1,268 @@
+
+.details{
+    padding-top: 15vh;
+}
+
+.details > .container{
+    justify-content: space-between;
+    position: relative;
+}
+
+.details .imgContainer{
+    flex-basis: 25vw;
+    position: relative;
+}
+
+.details .imgContainer img{
+    width: 100%;
+}
+
+.descriptionContainer{
+    width: 65%;
+    margin-top: clamp(5px, 3vw, 500px);
+}
+
+.descriptionContainer .topSide{
+    justify-content: space-between;
+}
+
+.descriptionContainer h3{
+    color: white;
+    font-size: clamp(1rem, 3vw, 3.5rem);
+}
+
+.descriptionContainer .maintitle div{
+    color: rgb(149, 149, 149);
+    font-size: clamp(0.8rem, 1.2vw, 2rem);
+    margin-top: 1vh;
+}
+
+.descriptionContainer .rating{
+    align-items: center;
+    gap: 0.5vw;
+    width: 10vw;
+    justify-content: end;
+}
+
+.descriptionContainer .rating .rateNumber{
+    color: white;
+    font-size: clamp(0.9rem ,1.5vw, 2rem);
+}
+
+.descriptionContainer .rating i{
+    color: #FBBC04;
+    font-size: clamp(0.9rem ,1.5vw, 2rem);
+}
+
+/* Trailer Icon */
+.details .play{
+    position: absolute;
+    background-color: var(--mainColor);
+    top: clamp(100px, 30vw, 480px);
+    right: -20px;
+    z-index: 1;
+    padding: 1vw 1.8vw;
+    justify-content: space-between;
+    align-items: center;
+    width: 4.5vw;
+    transition: .3s ease-in-out;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.details .play:hover{
+    width: 10vw;
+}
+
+.details .play i{
+    color: white;
+    font-size: clamp(0.8rem, 1.8vw, 1.6rem);
+}
+
+.details .play p{
+    color: white;
+    font-size: clamp(0.8rem, 1.5vw, 1.2rem);
+    font-weight: var(--fw7);
+    display: none;
+    transition: .8s ease-in-out;
+}
+
+.details .play:hover p{
+    display: block;
+}
+
+/* Overview */
+.overview{
+    margin-top: 4vh;
+}
+.overview > .title{
+    color: white;
+    font-size: clamp(0.8rem, 1.3vw, 1.8rem);
+    font-weight: var(--fw3);
+}
+
+.overview .line{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin: 2vh 0;
+}
+
+.overview .description{
+    color: white;
+    font-size: clamp(0.7rem, 1vw, 1rem);
+}
+
+.overview .info{
+    margin-top: 4vh;
+}
+
+.overview .info div{
+    color: white;
+    margin-top: 1vw;
+    font-size: clamp(0.8rem ,1.1vw, 1.5rem);;
+}
+
+.overview .info span{
+    color: rgb(149, 149, 149);
+}
+
+.overview .info .ProductionCountries span{
+    margin-right: 4vw;
+}
+
+.overview .info .ProductionCountries .proValue{
+    margin: 0;
+    padding: 0;
+}
+
+.overview .info .Genre{
+    align-items: center;
+}
+
+.overview .info .Genre .genreValue{
+    margin: 0;
+    padding: 0;
+}
+
+.overview .info .Genre span{
+    margin-right: 6.7vw;
+}
+
+.overview .info .Status .statusValue{
+    margin: 0;
+    padding: 0;
+}
+
+.overview .info .Status span{
+    margin-right: 6.6vw;
+}
+
+.overview .info .Language span{
+    margin-right: 5vw;
+}
+.overview .info .Language .languageValue{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* RelatedMovies */
+.relatedMovies{
+    margin-top: 8vh;
+}
+
+.relatedMovies .swiperContainer{
+    width: 100%;
+}
+
+.relatedMovies .title{
+    color: white;
+    font-size: 1.2rem;
+}
+
+.relatedMovies .line{
+    width: 100%;
+    height: 1px;
+    background-color: white;
+    margin: 2vh 0;
+}
+
+
+@media (max-width : 1100px){
+    .details .imgContainer{
+        flex-basis: 35vw;
+    }
+    .descriptionContainer{
+        width: 55%;
+        margin-top: clamp(5px, 7vw, 100px);
+    }
+    .details .play{
+        top: 43vw;
+        padding: 1vw 2vw;
+        width: 13vw;
+    }
+    .details .play p{
+        display: block;
+    }
+}
+
+@media (max-width : 769px){
+    .descriptionContainer{
+        margin: 0;
+    }
+    .descriptionContainer .topSide{
+        display: flex !important;
+        flex-direction: row !important;
+        justify-content: space-between !important;
+    }
+}
+
+@media (max-width : 600px){
+    .details{
+        margin-bottom: 20vh;
+    }
+
+    .info{
+        position: absolute;
+        width: 100%;
+        top: 52vw;
+        left: 0;
+        margin-top: 20vh;
+    }
+
+    .details .play{
+        width: clamp(50px ,18vw, 80px);
+        right: -10px;
+    }
+    
+}
+
+@media (max-width : 370px){
+    .details{
+        margin: 0;
+        padding-top: 12vh;
+    }
+    .details .container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .info{
+        position: initial;
+    }
+
+    .imgContainer{
+        width: 90%;
+    }
+
+    .descriptionContainer{
+        width: 100%;
+    }
+
+    .details .play{
+        width: 23vw;
+        right: 5vw;
+        top: 110vw;
+    }
+}
